@@ -65,7 +65,7 @@ form input[type="submit"]:hover{
     display: flex;
     justify-content: space-between;
     align-items: center;   
-    background-color: black;
+    background-color: #191d21;
     width: 100%;
 }
 .topbar > h1{
@@ -133,24 +133,59 @@ li:nth-child(2){
     margin: auto;
 }
 .about-atricles>h2{
+    animation: SlideBottom 2s ease forwards;
     font-size: 2rem;
 }
 .about-atricles>p{
     font-size: 1.1rem;
     margin-bottom: 2rem;
+    animation: SlideTop 2s ease forwards;
 }
 #form-info>h2{
     font-size: 2rem;
+    animation: SlideBottom 2s ease forwards;
 }
 #form-info>p{
     font-size: 1.1rem;
+    animation: SlideTop 2s ease forwards;
 }
 img{
     width: 200px;
     height:200px;
 }
+.info-blog h2{
+    font-size: 2.2rem;
+    margin: 0 0 1.5rem 0;
+    animation: SlideTop 2.5s ease forwards;
+}
+.info-blog{
+    border: 3px #398bf8 solid;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin: 2rem 0 2rem 0;
+    animation: FadeIn 2.5s ease forwards;
+}
+#about-blog>.info-blog>img{
+    width: 240px;
+    height: 135px;
+    margin-right: 1rem;
+    float:left;
+    animation: SlideRight 2.5s ease forwards;
+}
+#about-author>.info-blog>img{
+    width: 200px;
+    height: 200px;
+    margin-right: 1rem;
+    float:left;
+    animation: SlideRight 2.5s ease forwards;
+}
+.info-blog>p{
+    text-align: left;
+    animation: SlideLeft 2.5s ease forwards;
+}
 .post{
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
     display: flex;
     border: 3px #398bf8 solid;
     border-radius: 10px;
@@ -158,6 +193,12 @@ img{
     justify-content: center;
     padding: 0.8rem;
     margin-bottom: 4rem;
+}
+#articles article:nth-child(even){
+    animation: SlideLeft 2s ease forwards;
+}
+#articles article:nth-child(odd){
+    animation: SlideRight 2s ease forwards;
 }
 .post-description{
     display: flex;
@@ -168,7 +209,7 @@ img{
 .post-description>p{
     margin-top: 0;
 }
-.post-description>input[type="button"]{
+.post-description input[type="button"]{
     background-color: #8229ee;
     border:none;
     border-radius: 5px;
@@ -178,7 +219,23 @@ img{
     padding: 0.5rem;
     transition: 2s ease forwards;
 }
-.post-description>input[type="button"]:hover{
+.post-description input[type="button"]:hover{
+    background-color: #6117cc;
+    transform: translateY(1px);
+    cursor: pointer;
+}
+.show-more-button{
+    background-color: #8229ee;
+    border:none;
+    border-radius: 5px;
+    font-size: 1rem;
+    color:#fff;
+    width: 30%;
+    padding: 0.5rem;
+    transition: 2s ease forwards;
+    animation: SlideTop 2s ease forwards;
+}
+.show-more-button:hover{
     background-color: #6117cc;
     transform: translateY(1px);
     cursor: pointer;
@@ -231,6 +288,15 @@ img{
     padding: 1rem;
     
 }
+@keyframes FadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 @keyframes SlideRight {
     0% {
         transform: translateX(-50px);
@@ -255,7 +321,18 @@ img{
 }
 @keyframes SlideTop {
     0% {
-        transform: translateY(50px);
+        transform: translateY(40px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+@keyframes SlideBottom {
+    0% {
+        transform: translateY(-40px);
         opacity: 0;
     }
 

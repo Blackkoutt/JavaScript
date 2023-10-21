@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Ćwiczenie 2</title>
+</head>
+<body>
+    <div class="container">
+        <div class="info">
+            <h1>Ćwiczenie 2</h1>
+            <h2>Rozwiązania znajdują się także w konsoli</h2>
+        </div>
+        <div class="task">
+            <h2>Zadanie 1</h2>
+            <p>Wypisz do konsoli wartości od 1 do 100, zastępując każdą wartość parzystą słowem "Fiz",
+               a każdą podzielną przez trzy słowem "Buz" (lub słowem "FizBuz" jeśli jest podzielna zarówno
+               przez 2 jak i przez 3). Wartości wypisz w pojedynczym wierszu - pojedynczą instrukcją console.log
+               (np. budując string).</p>
+               <h3>Wynik:</h3>
+            <div class="result-task1"></div>
+        </div>
+        <div class="task">
+            <h2>Zadanie 2</h2>
+            <p>Wczytaj od użytkownika (np. wykorzystując funkcję prompt()) długość promienia koła.
+               Oblicz jego obwód i pole powierzchni. Wypisz je, zaokrąglając wartość do dwóch miejsc
+               po przecinku (np. korzystając z funkcji alert()). Jeśli podana wartość nie jest liczbą,
+               poinformuj o tym odpowiednik komunikatem.</p>
+               <h3>Wynik:</h3>
+            <div class="result-task2"></div>
+        </div>
+        <div class="task">
+            <h2>Zadanie 3</h2>
+            <p>Do każdego z poniższych podpunktów napisz osobną funkcję.
+                Działanie zademonstruj wywołując je po kolei i wypisując zawartość tablicy po każdej operacji:
+                <ul>
+                    <li>Stwórz i wypełniaj tablicę losowymi wartościami z przedziału 1-10, do momentu gdy ich suma nie osiągnie 200.</li>
+                    <li>Znajdź wartość najmniejszą i usuń jej pierwsze wystąpienie.</li>
+                    <li>Znajdź wartość największą i usuń jej ostatnie wystąpienie.</li>
+                    <li>Wypisz do konsoli informację ile razy każda z wartości występuje w tablicy.</li>
+                    <li>Dziesięć pierwszych wartości (o indeksach 0-9) przenieś na koniec (nie zmieniając ich kolejności).</li>
+                </ul>
+            </p>
+            <h3>Tablica po utworzeniu:</h3>
+            <div class="result-task-3-1"></div>
+            <h3>Tablica po usunięciu pierwszej najmniejszej wartości:</h3>
+            <div class="result-task-3-2"></div>
+            <h3>Tablica po usunięciu ostatniej największej wartości:</h3>
+            <div class="result-task-3-3"></div>
+            <h3>Ilość poszczególnych wartości w tablicy:</h3>
+            <div class="result-task-3-4"></div>
+            <h3>Tablica po przeniesieniu 10 pierwszych elementów na koniec:</h3>
+            <div class="result-task-3-5"></div>
+        </div>
+        <div class="task">
+            <h2>Zadanie 4</h2>
+            <p>Zadeklaruj tablicę wypełnioną pięcioma imionami (napisami).
+               Następnie każde imię "zakoduj" zmieniając każdą literę "a" lub "A" na "4",
+               a każdą "e" lub "E" na "3". Następnie z każdego imienia dłuższego niż 6 znaków wytnij środek,
+               aby zostawić trzy pierwsze i trzy ostatnie litery, a na jego miejsce wstaw trzy kropki "...".
+               Np. imię "Kazimierz" zmieni się w "K4z...3rz". Efekt wypisz do konsoli.
+            </p>
+            <h3>Imiona przed zakodowaniem:</h3>
+            <div class="result-task-4-1"></div>
+            <h3>Imiona po zakodowaniu:</h3>
+            <div class="result-task-4-2"></div>
+        </div>
+        <div class="task">
+            <h2>Zadanie 5</h2>
+            <p>Dany jest string zawierający nazwy towarów oddzielane przecinkami
+               (np. "jajka, mleko, masło, chleb"). Na tej podstawie stwórz cennik - tablicę obiektów.
+               Każdy obiekt w tej tablicy zawiera dwa pola - nazwę (wydobytą ze stringu) oraz cenę
+               (losową wartość rzeczywistą z dokładnością do dwóch miejsc po przecinku).
+               Wyświetl ją w konsoli (możesz skorzystać np. z console.table()).
+               Następnie stwórz tablicę zakupów. Skopiuj do niej wybrane losowo towary (nie więcej niż połowę),
+               do każdego z nich dopisując ilość (losową). W konsoli wyświetl tablicę zakupów oraz całkowitą
+               cenę.
+            </p>
+            <h3>Cennik: </h3>
+            <div class="result-task-5-1"></div>
+            <h3>Lista zakupów: </h3>
+            <div class="result-task-5-2"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

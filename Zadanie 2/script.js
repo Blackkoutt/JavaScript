@@ -31,7 +31,7 @@ function CicrleAreaAndCircumference(){
     // Jeśli podana wartość jest liczbą
     if(!isNaN(r)){
         let circleArea = (Math.PI*Math.pow(r,2)).toFixed(2);    // Oblicz pole i zaokrąglij
-        let circumference = (4*Math.PI*r).toFixed(2);   // Oblicz obwód i zaokrąglij
+        let circumference = (2*Math.PI*r).toFixed(2);   // Oblicz obwód i zaokrąglij
         let areaInfo = `Pole koła wynosi: ${circleArea}`;
         let circumferenceInfo = `Obwód koła wynosi: ${circumference}`;
         let output = `<div> ${areaInfo} </div>

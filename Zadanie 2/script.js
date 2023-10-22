@@ -243,6 +243,13 @@ function GetArrayString(array){
     }
     return result;
 }
+function GetTotalPrice(shoppingCart){
+    let totalPrice = 0;
+    for (let i = 0; i < shoppingCart.length; i++) {
+        totalPrice += parseFloat(shoppingCart[i].price);
+    }
+    return totalPrice.toFixed(2);
+}
 
 
 
@@ -332,8 +339,11 @@ document.querySelector(".result-task-5-1").innerHTML=MakeTableInView(priceList);
 
 console.log("\nLista zakupów: ");
 console.table(shoppingCart);
+console.log("\nCałkowita cena: ");
+console.log(GetTotalPrice(shoppingCart));
 // Zmiana wewnętrznej zawartości elementu o klasie result-task-5-2 w index.html
 document.querySelector(".result-task-5-2").innerHTML=MakeTableInView(shoppingCart);
+document.querySelector(".price").innerHTML=GetTotalPrice(shoppingCart);
 
 
 

@@ -19,7 +19,7 @@ class Product{
             throw new Error("ID produktu powinno być liczbą całkowitą większą od 0");
         }
         if(!parseInt(manufacture_year) || manufacture_year<=1900 || manufacture_year>new Date().getFullYear()){
-            throw new Error("Data powinna być liczbą całkowitą większą niż 1799 i nie większą niż rok bieżący");
+            throw new Error("Data powinna być liczbą całkowitą większą niż 1900 i nie większą niż rok bieżący");
         }
         if(!Number(price)||price<=0){
             throw new Error("Cena powinna być liczbą większą od 0");

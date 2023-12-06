@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="error_message">
+        <p></p>
+    </div>
+    <div class="container">
+        <div class="header">Paragon 30-03-15/004</div>
+        <div class="button_div"></div>
+        <table>
+            <thead>
+                <tr>
+                    <td>Lp</td>
+                    <td>Nazwa</td>
+                    <td>Ilość</td>
+                    <td>Cena</td>
+                    <td>Suma</td>
+                </tr>
+            </thead>
+            <tbody class="list">
+            </tbody>
+        </table>
+        <div class="div_sum">
+            <p>RAZEM: </p>   
+            <p id="total_sum"></p>
+        </div>
+        <dialog class="add_modify">
+            <form method="dialog">
+                <div class="dialog_form">
+                    <div class="input_dialog_form">
+                        <label for="name">Nazwa:</label>
+                        <input type="text" name="name">
+                    </div>
+                    <div class="input_dialog_form">
+                        <label for="quantity">Ilość:</label>
+                        <input type="number" name="quantity" step="0.01">
+                    </div>
+                    <div class="input_dialog_form">
+                        <label for="price">Cena:</label>
+                        <input type="number" name="price" step="0.01">
+                    </div>
+                    <div class="buttons_submit_reset">
+                        <input type="submit" value="Zatwierdź">
+                        <input type="reset" value="Anuluj">
+                    </div>
+                    <div>
+                        <p></p>
+                    </div>
+                </div>
+            </form>
+        </dialog>
+        <dialog class="delete_dialog">
+            <form method="dialog">
+                <div>
+                    <p></p>
+                    <input class="delete_button" type="submit" value="Usuń">
+                    <input class="cancel_button" type="reset" value="Anuluj">
+                </div>
+            </form>
+        </dialog>
+    </div>
+    <script src="script.js"></script>
+    
+</body>
+</html>
